@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #b5b5b5;
+    height: 100vh;
+}
+
+.main-container {
+    text-align: center;
+}
+
+.main-container h1 {
+    text-shadow: 0 0 5px #ffffff;
+    padding: 1rem 0;
+}
+
+.rgb-field {
+    padding: .5em;
+    font-size: 1rem;
+    width: 20em;
+    color: #000000;
+    border: 1px solid;
+    box-shadow: 3px 3px 6px 0px #000000;
+}
+
+.change-color-btn {
+    padding: .5em;
+    margin: 1rem 0;
+    border: none;
+    font-size: 18px;
+    box-shadow: 3px 3px 6px 0px #000000;
+    cursor: pointer;
+}
+
+.middle-container button {
+    padding: .5em;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #b5b5b5;
+    box-shadow: 3px 3px 6px 0px #000000;
+}
+
+
+/* generate toast message  */
+
+.toast-message {
+    position: fixed;
+    font-size: 1.1rem;
+    background-color: #006100;
+    color: #b5b5b5;
+    padding: .5em;
+    box-shadow: 3px 3px 6px 0px #000000;
+    Right: 10px;
+    top: 10px;
+}
+
+
+/* animation for toast message  */
+
+.animation-in-toast {
+    animation-name: simple-in;
+    animation-duration: 1s;
+}
+
+@keyframes simple-in {
+    0% {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.animation-out-toast {
+    animation-name: simple-out;
+    animation-duration: 1s;
+}
+
+@keyframes simple-out {
+    0% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+}
